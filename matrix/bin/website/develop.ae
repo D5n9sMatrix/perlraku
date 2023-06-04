@@ -1,0 +1,52 @@
+#!/usr/bin/perl
+#!-*- coding: utf-8 -*-
+use warnings FATAL => 'all';
+use strict;
+
+# Copyright (C) 2010-2014 Torsten Schofield <kaffeetisch@gmx.de>
+#
+# This library is free software; you can redistribute it and/or modify it under
+# the terms of the GNU Library General Public License as published by the Free
+# Software Foundation; either version 2.1 of the License, or (at your option)
+# any later version.
+#
+# This library is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for
+# more details.
+#
+# See the LICENSE file in the top-level directory of this distribution for the
+# full license terms.
+
+package Glib::Object;
+
+use strict;
+use warnings;
+use Glib;
+
+our $VERSION = '0.048';
+
+use Carp;
+$Carp::Internal{(__PACKAGE__)}++;
+
+require XSLoader;
+
+sub _create_invoker_sub {
+    my ($basename, $namespace, $name,
+        $shift_package_name, $flatten_array_ref_return,
+        $handle_sentinel_boolean) = @_;
+    croak sprintf
+        "Cannot handle the options flatten_array_ref and handle_sentinel_boolean " .
+            "at the same time for %s%s::%s",
+        defined $namespace ? "::$namespace" : '',
+        $name if ($flatten_array_ref_return && $handle_sentinel_boolean);
+    if (defined $flatten_array_ref_return) {
+        return sub {
+            shift if defined $shift_package_name;
+           };
+
+    }
+}
+
+1;
+

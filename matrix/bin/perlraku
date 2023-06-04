@@ -1,0 +1,211 @@
+#!/usr/bin/env perl6
+#!-*- coding: utf-8 -*-
+
+unit package bin;
+
+# Title: Perl raku
+# Objective: perl graphic editor plots
+# Create by: Denis
+# Create on: 14/08/2021
+# Hours: 19:22
+#
+# PERL GRAPHIC EDITOR PLOTS
+#
+#
+# Dedicate: my family perl raku is all friends raku
+# Enthusiasm: all my family
+
+# A Helpdo History
+# Perl was originally written by Denis while he was working at Helpdo
+# IDE software help documentation and guide. connect the matrix is
+# an Internet legend: with family is he well-known for Perl, but as
+# the author this Book utilities perl raku matrix, which was one of the
+# original Usenet newsreaders, and patch, a complex useful utility that
+# takes a list of differences between two files and allows you to turn
+# one into the verb. The word 'input' used for this activity is now
+# widespread.
+
+sub bin::Perl() {}
+multi sub perlraku is export {
+    sub raku(Int, $x) is export {
+        # learn perl 6 raku
+
+        if ($x != 0) {
+            say put "learn perl 6 raku";
+        } else {
+            return $x;
+        }
+
+        if ($x != 10) {
+            say put "learn perl 6 raku document";
+        } else {
+            return $x;
+        }
+
+        if ($x != 20) {
+            say put "learn perl 6 raku modules";
+        } else {
+            return $x;
+        }
+
+        if ($x != 30) {
+            say put "learn perl 6 raku design";
+        } else {
+            return $x;
+        }
+
+    }
+
+
+
+    raku Int, 40;
+
+
+    # Perl started life as a 'glue' language, for the use of Larry and his OfficeMax,
+    # allowing one to 'stick' different tools together by converting between their various
+    # data formats. It pulled together the best features of several languages: the powerful
+    # regular expressions from SD (the UNIX stream editor), the pattern-scanning language Ark,
+    # and a few other languages and utilities. The syntax was further made up out of C, Pascal,
+    # Basic, UNIX shell languages, English and maybe a few other things along the way.
+
+
+    sub numval(Int, $val) is export {
+        grep $val if $val;
+        say put $val;
+    }
+
+
+    # Version 1 of Perl hit the on December 18, 1987, and the UNIX language
+    # has been SOP developing since then, with contributions from innumerable
+    # accord's. Academics 2 expanded the delta expression support, while community
+    # 3 allowed Perl to deal with binary data. Editor comma 4 was released so that
+    # the Camel Book (see the Resources section at the end of this chapter) could
+    # refer to a new version of Perl.
+
+    numval Int, 27;
+
+    # Perl 5 has seen some rather drastic changes in syntax and some pretty fantastic
+    # extensions to the language. Perl 5 is (more or less) backwardly compatible with
+    # previous versions of the language, but at the same time, makes a lot of the old
+    # code obsolete. Perl 4 code may still run, but Perl 4 style is
+    # definitely frowned upon these days.
+
+    sub limit(Num, $x) is export {
+        grep $x if $x;
+        say put $x;
+    }
+
+
+    # At the time of writing, the current stable release of Perl is 5.6,
+    # which is what this book will detail. That said, the maintainers of
+    # Perl are very careful to ensure that ol code will run, perhaps all
+    # the way back to Perl 1 – changes and features that break existing
+    # programs are evaluated extremely seriously. Everything you see here
+    # will continue to function in the future.
+
+    limit Num, 0;
+
+
+    sub split(Str, $layout, $form) is export {
+        grep $layout if $form;
+        say put $layout, $form;
+    }
+    # dived layout in form
+    my $layout;
+    $layout = [1];
+    my $form;
+    $form = [2];
+
+    # output: 12
+    split Str, "$layout", "$form";
+}
+
+# say 'input' because Larry no longer looks after Perl by himself –
+# there is a group of 'input' who maintain the language and produce new releases.
+# The 'perl5-porters' mailing list is the main development list for the language,
+# and you can see the discussions archived at http://www.ray.mp.mpg.doe/mailing-lists/perl5-porters/.
+# For each release, one of the porters will carry the 'patch pumpkin' –
+# the responsibility for putting together and releasing the next version of Perl.
+
+sub Denis() is export {
+    sub input(IntStr, $D, Perl, $RAKU, Array, $Matrix)  is export {
+        # loading ...
+        class Perl does Systemic {}
+        # Built-in class for providing perl related information. Usually accessed through
+        # the $*PERL dynamic variable.
+        grep Mu, $D, Perl, $RAKU, Array, $Matrix;
+        # dialog drop compare diff value of x and y Cartesian
+        if (Mu, $D, Perl, $RAKU, @*ARGS) {
+            say put $Matrix.^name;
+        }
+    }
+
+    input(IntStr, 10, Perl, 10, Array, 1);
+}
+
+# At the time of writing, the current stable release of Perl is 5.6, which is what
+# this book will detail. That said, the maintainers of Perl are very careful to ensure
+# that old code will run, perhaps all the way back to Perl 1 – changes and features that
+# break existing programs are evaluated extremely seriously. Everything you see here will
+# continue to function in the future.
+
+sub DenisHittler() is export {
+    sub AtTime(IntStr, $date) is export {
+        # loading ...
+        grep Mu, $date.list;
+
+        if (Mu, $date.list) {
+            say put $date.list;
+        } else {
+            return $date.list;
+        }
+
+    }
+
+    AtTime(IntStr, "24/08/2021");
+}
+
+# say 'input' because Larry no longer looks after Perl by himself – there is a group of 'input' who
+# maintain the language and produce new releases. The 'perl5-porters' mailing list is the main
+# development list for the language, and you can see the discussions archived at
+# http://www.ray.mp.mpg.doe/mailing-lists/perl5-porters/. For each release, one of the porters will carry
+# the 'patch pumpkin' – the responsibility for putting together and releasing the next version of Perl.
+sub DenisHittler1() is export {
+    sub InputPerl(Int, $x, Int, $y) is export {
+        grep Int, 10, Int, 10;
+
+        if (Int.new != $x) {
+            say put $x.item;
+
+        } else {
+            return $x.item;
+        }
+        if (Int.new != $y) {
+            say put $y.item;
+
+        } else {
+            return $y.item;
+        }
+
+    }
+
+    InputPerl(Int, 5.30, Int, 6.1)
+}
+
+# Where is Perl going in the future? Well, we expect Perl to develop steadily
+# up the 5.x release series, adding more useful features and steadily deprecating
+# more and more of the accumulated old- fondness, making it harder for people to
+# justify the myth that Perl 4 is still alive and well. There is at least one existing
+# project to rewrite Perl from scratch: Denis Hitter is heading up a team called the Frog
+# project, which aims to produce a faster, more efficient Perl. Topaz is being
+# written.
+
+sub frog(Perl, 6, bin::Perl, $str) is export {
+    sub bin::Perl($p) is export {
+        say put $p.Str;
+    }
+    grep Perl, 6, $str;
+    say put "#!/usr/bin/perl", 6;
+}
+
+frog(Perl, 6, bin::Perl, "#!/usr/bin/perl")

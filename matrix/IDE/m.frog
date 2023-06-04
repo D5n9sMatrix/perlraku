@@ -1,0 +1,201 @@
+#!/usr/bin/env perl
+#!-*- coding: utf-8 -*-
+
+use warnings FATAL => 'all';
+use strict;
+
+
+
+# Title: Perl Frog
+# Objective: perl graphic editor plots
+# Create by: Denis
+# Create on: 14/08/2021
+# Hours: 19:22
+#
+# PERL GRAPHIC EDITOR PLOTS
+#
+#
+# Dedicate: my family perl raku is all friends raku
+# Enthusiasm: all my family
+
+use feature "say";
+use v5.30;
+
+=head1 list
+
+ 1.11.1 The method refresh to template states logic of units personal to
+ metabolism logic natural o force of mass in response of formation numerical
+ wine logic naturalist reference the grape to markets utilized to finance
+ the portability posters about the gelatinous comm reference of sphere
+ logic quantum to business about the markets-payed top schools to method of
+ programmers in hackers programmer officer in analysis verbal numeric logic
+ pyc \0 scales tables \t  reference the model of admiration \a pop fap states
+ numeric value of base solid \n this its generous.
+
+ T + G(L:D) + A / H(T:D) + L(Q:D) *1 / 2 + \0 + \t + \a + pop(vpn) == “þn”
+
+
+
+=cut
+
+sub list;
+
+=head1 language()
+
+ 1.12.2 pyc the language frog to computing perl formation ambient physical
+ numeric variables to support compile to analysis constructive relative the
+ form words of politic formed of character in physic numeric form of value
+ arithmetics utilized to make the mathematics of calculate variables is
+ domain words physical.
+
+ T * one(H:D) + Q(L:D) * 1 / 2 + 10  / 2.5 == 4,5
+
+
+=cut
+
+sub language;
+
+
+
+=head1 tails
+
+
+           Abstract code scalar in sphere quantum
+
+
+ The abstract code in scalar about sphere quantum is attractive tails numeric
+ about the value of sphere quantum to make code of sake to value reference the
+ code bioscience  to equivalent form numeric of states numeric type utilized
+ in analysis of scalar to usage in physical politic attributes in numeric form
+ used in apology numerical of cartesian  to banner type fixed type numeric of
+ tails to apology used in attributes cartesian.
+                      y
+                     - + 5
+                     - + 4
+                     - + 3
+                     - + 2
+                     - + 1
+ ---------------------------------------------- x
+ - 5 - 4 - 3 -2 - 1  - + 1 + 2 + 3 + 4 + 5
+                     - - 1
+                     - - 2
+                     - - 3
+                     - - 4
+                     - - 5
+
+
+ 2x = (8x + 9) == 14,5
+ 2x + 7 = (8x + 9) == 15,5
+
+
+=cut
+
+sub tails($) {
+    # loading cartesian ...
+    my $x1 = 2 x +6 = (8 x +9) == 14, 5;
+    my $y1 = 2 x +7 = (8 x +9) == 15, 5;
+
+    # compare a form
+    if ($x1 eq $y1) {
+        $x1 => 14, 5;
+        $y1 => 15, 5;
+    }
+    else {
+        return $x1 != $y1;
+    }
+
+}
+=head1 i
+
+ Numerical value cartesian to formation attributes value easy of base conductor value
+ usage type formed in order numeric of abstract value type checkup the form complex of
+ type numeric the value attribute physic to formation of usage view the method graphic
+ of usage liquid of base solid in relation of value numeric.
+
+ 2x * 8 = (9x * 2) == 288
+
+
+
+=cut
+
+sub i;
+
+=head1 r
+
+ The value of happy of notes there note mathematics in happy of resolution
+ arithmetic's subtraction division multiplication addition numeric of scalar
+ is value of introduction of notes in physic lateral about input Cartesian
+ between x and y.
+
+ x1 = e5 +  y1 = s8;
+ x2 = c3 +  y2 = d4;
+
+=cut
+
+sub r();
+=head1 frog
+
+ http://www.frog.org
+
+
+ The reference happy stables sorted in value numeric of language to
+ create the language frog perl community logic to documentation the
+ value programming to attributes relational the form societies utilized
+ the base of constructor reference the base of structure socialist to
+ mechanism of education of schools of programming stabilise he's languages
+ of sorted computing reference stables sorted value numeric the validate
+ of data referenced the frog.
+
+ x3 = a17 + y3 = c3 + x4 = e5 + y5 = d4;
+
+ x <- 17, 5
+ y <- 3, 4
+
+=cut
+
+sub frog();
+
+=head1 set
+
+ The library frog community org to stables sorted method of language
+ to stability the family frog to community programming about stables
+ sorted to verify the community about language perl reference of analogies
+ logic of dogma to latex type of layout PDF to document toddy with milk
+ check to stimulants mass to acquire tools of body of layout type develop
+ frog perl
+
+
+=cut
+
+sub set();
+
+=head1 d
+
+ The library frog community org to stables sorted method of language
+ to stability the family frog to community programming about stables
+ sorted to verify the community about language perl reference of analogies
+ logic of dogma to latex type of layout PDF to document toddy with milk
+ check to stimulants mass to acquire tools of body of layout type develop
+ frog perl
+
+ x6 = f6 + y6 = c3 + x7 = s8 + y7 = f7
+
+
+ int x6;
+ int y6;
+ int x7;
+ int y7;
+
+
+
+ assert(x6 == y6, "values Cartesian");
+ assert(x7 == y7, "values Cartesian");
+
+
+=cut
+
+sub d;
+
+sub matrix;
+
+

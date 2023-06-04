@@ -1,0 +1,22 @@
+#!/usr/bin/env perl6
+
+use PerlIO;
+use PDL::Matrix;
+use base;
+
+# Title: Perl raku
+# Objective: perl graphic editor plots
+# Create by: Denis
+# Create on: 14/08/2021
+# Hours: 19:22
+#
+# PERL GRAPHIC EDITOR PLOTS
+#
+#
+# Dedicate: my family perl raku is all friends raku
+# Enthusiasm: all my family
+
+sub climatic {
+    my $degree = @_["32ºc"];
+    say put $degree;  
+}

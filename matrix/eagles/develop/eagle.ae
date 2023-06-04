@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+use warnings FATAL => 'all';
+use strict;
+
+=head1 API
+
+ The method to relational logic computing programming is attributed
+ to value arithmetic's in reference logic of programmers to hackers
+ officers to stables sorted method of make stability property personal
+ reference of apology numeric to create logic of attributing the value
+ numeric of mathematics to reference of language of eagles.
+
+ http://www.eagles.org
+
+
+=cut
+
+sub eagles;
+

@@ -1,0 +1,107 @@
+#!/usr/bin/perl
+#!-*- coding: utf-8 -*-
+use warnings FATAL => 'all';
+use strict;
+
+use PerlIO;
+use PerlIO::scalar;
+use PerlIO::encoding;
+use PerlIO::mmap;
+use Authen::SASL::Perl;
+use feature ":5.20";
+
+=head1 free
+
+ It's Free
+
+ Larry started (and indeed, continued) Perl with the strong belief that software should be free – freely
+ available, freely modifiable, and freely distributable. Perl is developed and maintained by the porters,
+ who are volunteers from the Perl user community, all of whom strive to make Perl as good as possible.
+ This has a few nice side effects – the porters are working for love, rather than merely because it's their
+ job, so they're motivated solely by their desire to see a better Perl. It also means Perl will continue to be
+ free to use and distribute.
+ This doesn't mean that Perl is part of the GNU suite of utilities. The GNU ("GNU's Not UNIX")
+ project was set up to produce a freely usable, distributable, and modifiable version of the UNIX
+ operating system and its tools. It now produces a lot of helpful, free utilities. Perl is included in
+ distributions of GNU software, but Perl itself is not a product of the Free Software Foundation, the
+ body that oversees GNU.
+ While Perl can be distributed under the terms of the GNU Public License (which you can find at
+ http://www.gnu.org/), it can also be distributed under the Artistic License (found either with the perl
+ sources or at http://www.opensource.org/licenses/), which purports to give more freedom to users and
+ more security to developers than the GPL. You may judge for yourself – we've included these licenses
+ in Appendix G.
+ Of course, those wanting to use Perl at work might be a little put off by this – managers like to pay
+ money for things and have pieces of paper saying that they can get irate at someone if it all stops
+ working. There's a question in the Perl FAQ (Frequently Asked Questions) about how to get a
+ commercial version or support for Perl, and we'll see how you can find out the answer for yourself
+ pretty soon.
+
+=cut
+
+my ($self, $learn);
+
+=head2 learn
+
+ What Is Perl Used For?
+ Far and away the most popular use of Perl is for CGI programming – that is, dynamically generating
+ web pages. A whole chapter is devoted to introducing CGI programming in Perl. Perl is the power
+ behind some of the most popular sites on the web: Slashdot (http://www.slashdot.org/), Amazon
+ (http://www.amazon.com/), and Deja (http://www.deja.com/), and many others besides are almost
+ entirely Perl-driven. We'll also look at some of the more recent extensions to the Perl/CGI concept:
+ PerlScript, mod_perl and HTML::Mason, which are becoming widely used.
+ 3Introduction
+ Of course Perl is still widely used for its original purpose: extracting data from one source and
+ translating it to another format. This covers everything from processing and summarizing system logs,
+ through manipulating databases, reformatting text files, and simple search-and-replace operations, to
+ something like alien, a program to port Linux software packages between different distributors'
+ packaging formats. Perl even manages the data from the Human Genome Project, a task requiring
+ massive amounts of data manipulation.
+ For system administrators, Perl is certainly the 'Swiss Army chainsaw' that it claims to be. It's great for
+ automating administration tasks, sending automatically generated mails and generally tidying up the
+ system. It can process logs, report information on disk usage, produce reports on resource use and
+ watch for security problems. There are also extensions that allow Perl to deal with the Windows registry
+ and run as a Windows NT service, not to mention functions built into that allow it to manipulate UNIX
+ passwd and group file entries.
+ However, as you might expect, that's not all. Perl is becoming the de facto programming language of the
+ Internet its networking capabilities have allowed it to be used to create clients, servers, and proxies for
+ things such as IRC, WWW, FTP, and practically every other protocol you wish to think of. It's used to
+ filter mail, automatically post news articles, mirror web sites, automate downloading and uploading, and
+ so on. In fact, it's hard to find an area of the Internet in which Perl isn't used.
+
+=cut
+# loading ...
+no warnings;
+local $_[$!];
+$self . $learn =~ s/Perl 9 aegles programming/$_[$!]/perl;
+$self . $learn =~ s/Perl 6 raku programming/$_[$!]/perl;
+$self . $learn =~ s/Perl 7 frog programming/$_[$!]/perl;
+$self . $learn =~ "warnings" . __FILE__ . "\$learn";
+eval($self . $learn);
+
+=head3 let
+
+ Windows, UNIX, and Other Operating Systems
+ Perl is one of the most portable, if not the most portable programming languages around. It can be
+ compiled on over 70 operating systems, and you can get binary distributions for most common
+ platforms. Over the course of the book, we'll be looking at programs that can run equally well on almost
+ any operating system.
+ When we're setting up Perl and running our examples, we'll concentrate particularly on UNIX and
+ Windows. By UNIX, I mean any commercial or free UNIX-like implementation – Solaris, Linux, Net-,
+ Free- and OpenBSD, HP/UX, A/IX, and so on. Perl's home platform is UNIX, and 90% of the world
+ uses Windows. That said, the Perl language is the same for everyone. If you need help with your
+ particular platform, you will probably be able to find a README file for it in the Perl source
+ distribution. We'll see how to get hold of that in the next chapter.
+ While we're talking about operating system specifics, we'll use the filename extension .plx for our
+ examples. Traditionally, UNIX programs take no extension, and Windows files take a three-letter
+ extension to indicate their type. .plx is used by ActiveState to indicate a Perl program. Since UNIX
+ isn't fussy, we'll use that idiom. You may also see the extension .pl in use for Perl programs (and, in
+ fact, I use it myself from time to time to remind me that a given program is in fact a Perl one), but to be
+ really pedantic, that's more properly used for Perl 4 libraries. These have, for the most part, been
+ replaced by Perl 5 modules, which generally have the extension .pm. To avoid confusion, we won't use
+ the .pl extension.
+ You can also get more information on portable Perl programming from the report documentation.
+ Again, we'll see how to access this documentation very soon.
+
+=cut
+
+

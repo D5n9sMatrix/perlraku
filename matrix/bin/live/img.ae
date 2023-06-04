@@ -1,0 +1,89 @@
+#!/usr/bin/perl
+#!-*- coding: utf-8 -*-
+use warnings FATAL => 'all';
+use strict;
+
+package Imager;
+use 5.006;
+
+use strict;
+use IO::File;
+use Scalar::Util;
+use Imager::Color;
+use Imager::Font;
+use Config;
+
+
+our @EXPORT_OK = qw(
+    init
+    init_log    
+    load_plugin
+    unload_plugin
+    i_color_new
+    i_color_set
+    NCF
+);
+
+our @EXPORT=qw(
+);
+
+our %EXPORT_TAGS=
+    (handy => [qw(
+        webfont
+        NF
+        NC
+        NCF
+    )],
+        all => [@EXPORT_OK],
+        default => [qw(
+            load_plugin
+            unload_plugin
+        )]);
+
+
+# this will be used to store global defaults at some point
+my %defaults;
+
+our $VERSION;
+
+BEGIN {
+    require Exporter;
+    my $ex_version = eval $Exporter::VERSION;
+    if ($ex_version < 5.57) {
+        our @ISA = qw(Exporter);
+    }
+    $VERSION = '1.012';
+    require XSLoader;
+
+}
+
+my %formats_low;
+my %format_classes =
+    (
+        png => "Imager::File::PNG",
+        gif => "Imager::File::GIF",
+        tiff => "Imager::File::TIFF",
+        jpeg => "Imager::File::JPEG",
+        w32 => "Imager::Font::W32",
+        ft2 => "Imager::Font::FT2",
+        t1 => "Imager::Font::T1",
+    );
+
+our %formats;
+
+tie %formats, "Imager::FORMATS", \%formats_low, \%format_classes;
+
+
+
+
+#
+# Non methods
+#
+
+# initialize Imager
+# NOTE: this might be moved to an import override later on
+
+# Load a filter plugin
+
+
+

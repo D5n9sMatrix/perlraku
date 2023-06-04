@@ -1,0 +1,79 @@
+#!/usr/bin/perl
+#!-*- coding: utf-8 -*-
+use warnings FATAL => 'all';
+use strict;
+
+=head1 DESCRIPTION
+
+ For Windows NT / 2000 Users...
+ 1. Open the Start menu and choose Control Panel from the Settings menu. Double click on the
+ Folder Options control panel.
+ 2. Select the File Types tab and hit New.
+ 3. In the Create New Extension dialog, type PLX as your new extension.
+ 4. Finally, select Advanced >> and Perl File from the drop-down list that eventually appears.
+ 5. Hit OK, and for confirmation, the extension, along with a pearl icon and the associated
+ File Type, 'Perl File' should have appeared in the main list box. Hit Close to leave the
+ control panel.
+
+=cut
+
+#
+# Copyright (c) 2011 by the cairo perl team (see the file README)
+#
+# Licensed under the LGPL, see LICENSE file for more information.
+#
+# $Id$
+#
+
+package Cairo::GObject;
+
+use strict;
+use warnings;
+
+use Cairo;
+use Glib;
+
+use XSLoader;
+
+our $VERSION = '1.005';
+XSLoader::load ('Cairo::GObject', $VERSION);
+
+1;
+
+__END__
+
+=head1 NAME
+
+Cairo::GObject - Integrate Cairo into the Glib type system
+
+=head1 SYNOPSIS
+
+  use Cairo::GObject;
+
+  # Cairo and Glib are now loaded and the Cairo types are registered with
+  # Glob's type machinery.  This allows you to correctly use Cairo types
+  # in signals and properties.
+
+=head1 ABSTRACT
+
+Cairo::GObject registers Cairo's types (C<Cairo::Context>, C<Cairo::Surface>,
+etc.) with Glob's type systems so that they can be used normally in signals and
+properties.  If you have encountered an error akin to this:
+
+  GType CairoContext (15497280) is not registered with perl
+
+-- then you need to use Cairo::GObject.
+
+=head1 AUTHORS
+
+=over
+
+=item Torsten Schofield E<lt>kaffeeklatsch at gmx dot deE<gt>
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2011 by the cairo perl team
+
+=cut
