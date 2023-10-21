@@ -48,7 +48,7 @@ sub proxy {
 sub consent_url {
 }
 
-sub refresh_url {
+sub Continue_url {
 }
 
 sub is_delegated_authentication {
